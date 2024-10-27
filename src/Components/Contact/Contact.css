@@ -2,7 +2,7 @@
     margin: 80px auto;
     max-width: 90%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
@@ -40,6 +40,35 @@
     width: 25px;
     margin-right: 10px;
 }
+
 .contact-col ul li:nth-child(3) img{
     width: 21px;
+}
+
+.contact form input, .contact form textarea{
+    display: block;
+    width: 100%;
+    background: #EBECFE;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+}
+
+.contact-col span{
+    display: block;
+    margin: 20px 0;
+}
+
+/*------------ media query -----------*/
+
+@media (max-width:700px) {
+    .contact{
+        display: block;
+    }
+    .contact-col{
+        padding: 20px;
+    }
 }
